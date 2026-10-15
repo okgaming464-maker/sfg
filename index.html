@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hexium Limiteds - Live</title>
+<meta name="theme-color" content="#e2231a">
+<style>
+:root{--bg:#16181b;--card:#23262a;--text:#eee;--mute:#9aa0a6;--red:#e2231a;--green:#02b757;--orange:#f68802}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+header{background:var(--red);padding:12px 14px;position:sticky;top:0;z-index:5}
+.top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+h1{margin:0;font-size:18px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#aaa;margin-right:6px}
+.dot.ok{background:#7CFFB2;animation:p 1.5s infinite}.dot.bad{background:#ffd2d0}
+@keyframes p{50%{opacity:.35}}
+#st{font-size:12px;opacity:.95;margin-top:4px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;padding:10px 12px;align-items:center}
+.bar input[type=search],.bar select{background:var(--card);color:var(--text);border:1px solid #393b3d;border-radius:6px;padding:8px;font-size:14px}
+.bar input[type=search]{flex:1;min-width:140px}
+.chk{font-size:13px;color:var(--mute);display:flex;align-items:center;gap:4px}
+.stats{display:flex;gap:8px;padding:0 12px}
+.stat{flex:1;background:var(--card);border-radius:8px;padding:8px;text-align:center}
+.stat b{display:block;font-size:18px}.stat span{font-size:11px;color:var(--mute)}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;padding:12px}
+.card{background:var(--card);border-radius:10px;padding:10px;border-left:5px solid #555;display:flex;gap:10px}
